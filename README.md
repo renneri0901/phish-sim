@@ -1,7 +1,7 @@
 # Phishing Simulation Tool 🐟🔐
 
 Welcome to the **Phishing Simulation Tool**! This project is designed to simulate phishing attacks, creating a safe environment to educate users on how to spot and avoid phishing attempts. Whether you're looking to train employees or learn more about phishing attacks, this tool is here to help!
-
+**🔗 [Presentation Slides](https://docs.google.com/presentation/d/1CP-zz0flqw1jYj82eAgw6iiNGvLuDCXj3t2GLUkywEk/edit?usp=sharing)**  
 ---
 
 ## Features ✨
@@ -19,8 +19,9 @@ Welcome to the **Phishing Simulation Tool**! This project is designed to simulat
 1. **Clone the repo**:
 
 ```bash
-git clone https://github.com/your-username/phishing-simulation-tool.git
-cd phishing-simulation-tool
+git clone https://github.com/renneri0901/phish-sim.git
+cd phish-sim
+
 ```
 
 2. **Install dependencies**:
