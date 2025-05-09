@@ -23,8 +23,8 @@ Before using the tool, make sure you have the following:
 Clone the repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/your-username/phishing-simulation-tool.git
-cd phishing-simulation-tool
+git clone https://github.com/renneri0901/phish-sim.git
+cd phish-sim
 ````
 
 ### Step 2: Install Dependencies
